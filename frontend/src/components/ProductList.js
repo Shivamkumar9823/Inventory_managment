@@ -7,7 +7,8 @@ export default function ProductList() {
   const [query, setQuery] = useState("");
   const [stats, setStats] = useState({});
 
-  const API = "http://localhost:5000/api/products";
+  // const API = "http://localhost:5000/api/products";
+  const API = "https://inventory-managment-45a9.onrender.com/api/products";
 
   const loadStats = async () => {
   const res = await axios.get(`${API}/stats`);

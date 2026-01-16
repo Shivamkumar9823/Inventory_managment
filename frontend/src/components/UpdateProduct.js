@@ -6,7 +6,9 @@ export default function UpdateProduct() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState({});
-  const API = "http://localhost:5000/api/products";
+  // const API = "http://localhost:5000/api/products";
+  const API = "https://inventory-managment-45a9.onrender.com/api/products";
+
 
   useEffect(() => {
     axios.get(API).then(res => {

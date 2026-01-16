@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 export default function AddProduct() {
   const [data, setData] = useState({});
   const navigate = useNavigate();
-  const API = "http://localhost:5000/api/products";
+  // const API = "http://localhost:5000/api/products";
+  const API = "https://inventory-managment-45a9.onrender.com/api/products";
+
 
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });

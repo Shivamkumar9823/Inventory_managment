@@ -10,7 +10,10 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ["http://localhost:3000", "https://inventory-managment-1-frontend.onrender.com"]
+}));
+
 
 app.get("/", (req, res) => {
   res.send("Inventory Backend API Running...");
